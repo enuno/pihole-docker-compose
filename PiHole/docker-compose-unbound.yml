@@ -29,7 +29,7 @@ services:
       DNS2: 127.0.0.1#5335 # Hardcoded to our Unbound server
       DNSSEC: "true" # Enable DNSSEC
     volumes:
-      - './etc-pihole:/etc/pihole'
-      - './etc-dnsmasq.d:/etc/dnsmasq.d'
+       - './etc/pihole/:/etc/pihole/'
+       - './etc/dnsmasq.d/:/etc/dnsmasq.d/'
     restart: unless-stopped
 

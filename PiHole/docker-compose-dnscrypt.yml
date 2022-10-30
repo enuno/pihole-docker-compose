@@ -13,7 +13,7 @@ services:
     environment:
       TZ: 'America/Denver'
     volumes:
-      - './etc-dnscrypt-proxy:/config'
+      - './etc/dnscrypt-proxy:/config'
     dns:
       - 103.196.38.38
       - 103.196.38.39
@@ -36,8 +36,8 @@ services:
       DNS1: "10.0.1.2#5300"
       DNS2: "no"
     volumes:
-       - './etc-pihole/:/etc/pihole/'
-       - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
+       - './etc/pihole/:/etc/pihole/'
+       - './etc/dnsmasq.d/:/etc/dnsmasq.d/'
     dns:
       - 103.196.38.38
       - 103.196.38.39
